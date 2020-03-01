@@ -1,0 +1,17 @@
+.newsletter {
+  &__block {
+    background-color: $third-color;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 5rem 0 rgba(26, 32, 40, 0.4);
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  &__title {
+    @include openSansLight();
+
+    color: $white;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,16 @@
+.btn {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &--link {
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
