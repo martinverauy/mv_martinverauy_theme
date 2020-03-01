@@ -1,4 +1,10 @@
 .btn {
+  border: solid 1px $primary-color;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  min-width: 14rem;
+
   &,
   &:hover,
   &:focus,
@@ -11,6 +17,16 @@
 
     &:hover {
       color: $secondary-color;
+    }
+  }
+
+  &--red {
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
     }
   }
 }

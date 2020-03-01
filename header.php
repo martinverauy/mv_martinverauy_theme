@@ -18,7 +18,7 @@
 		<?php wp_head(); ?>
 		<?php do_action( 'before_head_close_tag' ); ?>
 	</head>
-	<body <?php body_class(); ?> >
+	<body <?php body_class('site'); ?> >
 		<?php do_action( 'after_body_open_tag' ); ?>
 
 		<header class="header-site">
