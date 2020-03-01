@@ -1,0 +1,71 @@
+#formulario {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 100px;
+
+  .form-group {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      bottom: 0;
+      height: 1px;
+      width: 0;
+      background-color: $primary-color;
+      transition: all 0.3s ease;
+    }
+
+    &.enfocado {
+      &:after {
+        left: 0;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      background-color: #ddd;
+      padding: 5px 8px;
+      z-index: 2;
+      margin: 0;
+      font-size: 13px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    .form-control {
+      height: 44px;
+      padding: 5px 15px;
+      color: #333;
+      background-color: transparent;
+      position: relative;
+      border-radius: 0;
+
+      &,
+      &:focus {
+        box-shadow: none;
+        border: none;
+        border-bottom: solid 1px #ddd;
+      }
+
+      .has-label & {
+        padding-left: 70px;
+      }
+    }
+
+    textarea#{&} {
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  .help-block {
+    font-size: 12px;
+  }
+}
