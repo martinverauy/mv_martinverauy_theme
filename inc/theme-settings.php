@@ -23,6 +23,11 @@ function mv_martinverauy_theme_items() {
       'page'=>'my_theme_option',
       'fields'=> array(
         array(
+        'id'=> 'behance',
+        'title'=>'Behance',
+        'callback'=> 'text_callback'
+        ),
+        array(
         'id'=> 'facebook',
         'title'=>'Facebook',
         'callback'=> 'text_callback'
@@ -30,6 +35,21 @@ function mv_martinverauy_theme_items() {
         array(
         'id'=> 'twitter',
         'title'=>'Twitter',
+        'callback'=> 'text_callback'
+        ),
+        array(
+        'id'=> 'instagram',
+        'title'=>'Instagram',
+        'callback'=> 'text_callback'
+        ),
+        array(
+        'id'=> 'pinterest',
+        'title'=>'Pinterest',
+        'callback'=> 'text_callback'
+        ),
+        array(
+        'id'=> 'linkedin',
+        'title'=>'Linkedin',
         'callback'=> 'text_callback'
         ),
         array(
@@ -79,7 +99,7 @@ function mv_martinverauy_theme_items() {
  * Callbacks
 **********************************/
 function description_callback() { 
-    echo '<p>Lorem ipsuma</p>'; 
+    echo '<p>Agregar redes sociales disponibles para el sitio y shortcodes de plugins.</p>'; 
 }
 
 function textarea_callback($args) { 

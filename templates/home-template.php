@@ -9,24 +9,7 @@
 
 get_header(); ?>
 
-<section class="home-top height--full">
-	<div class="container">
-		<span class="home-top__pretitle">
-			<?php echo esc_attr(get_bloginfo('description', 'display')); ?>
-		</span>
-		<h2 class="home-top__title">
-			<span id="fraseTop">Sitios Web</span>
-		</h2>
-		
-		<?php
-		if(get_field('texto_introductorio')){
-			echo '<p>'.get_field('texto_introductorio').'</p>';
-		}
-		if(get_field('link_portfolio')){
-			echo '<a href="'.get_field('link_portfolio').'" class="btn btn--degradado">portfolio</a>';
-		}
-		?>
-	</div>
-</section>
+<?php get_template_part( 'template-parts/home/top' ); ?>
+<?php get_template_part( 'template-parts/home/news' ); ?>
 
 <?php get_footer();

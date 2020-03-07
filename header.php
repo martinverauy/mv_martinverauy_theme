@@ -25,7 +25,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-light header-site__navbar">
 				<div class="container">
 					<?php if ( get_theme_mod( 'mv_martinverauy_theme_logo' ) ) : ?>
-						<a href="<?php echo home_url('/'); ?>" class="navbar-brand header-site__logo" rel="home" itemprop="url"><img src="<?php echo get_theme_mod( 'mv_martinverauy_theme_logo' ); ?>" class="custom-logo" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="logo"></a>        
+						<a href="<?php echo home_url('/'); ?>" class="navbar-brand header-site__logo" rel="home" itemprop="url" style="<?php if ( get_theme_mod( 'mv_martinverauy_theme_logo_width' ) ) { echo 'width: ' . get_theme_mod( 'mv_martinverauy_theme_logo_width' ) . 'px'; } ?>"><img src="<?php echo get_theme_mod( 'mv_martinverauy_theme_logo' ); ?>" class="custom-logo" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="logo"></a>        
 					<?php // add a fallback if the logo doesn't exist
 					else : ?>
 					<?php the_custom_logo(); ?>

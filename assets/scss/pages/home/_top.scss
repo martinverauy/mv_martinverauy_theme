@@ -1,0 +1,31 @@
+.home-top {
+  background-image: url(../images/top-bg.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__block {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__pretitle {
+    color: $gray-500;
+    display: block;
+  }
+
+  &__title {
+    font-size: 11rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 3rem;
+    letter-spacing: -4px;
+  }
+
+  &__image {
+    width: 200%;
+    margin-left: -100%;
+  }
+}
