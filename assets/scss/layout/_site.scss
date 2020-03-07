@@ -1,10 +1,31 @@
 .site {
   &__block {
-    background-color: $third-color;
+    background-color: $white;
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 5rem 0 rgba(26, 32, 40, 0.4);
-    color: #fff;
+    color: $black;
     margin-bottom: 3rem;
     padding: 3rem 2rem;
+    position: relative;
+    z-index: 1;
+
+    &--red {
+      background-color: $third-color;
+      color: $white;
+    }
+
+    &--big {
+      padding: 4rem 7rem;
+    }
+  }
+
+  &__small {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 36px;
   }
 }

@@ -1,0 +1,14 @@
+.news {
+  &__image {
+    border-radius: 5px;
+    margin-bottom: -150px;
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  &__text-block {
+    margin: 0 75px 75px;
+    position: relative;
+    z-index: 2;
+  }
+}

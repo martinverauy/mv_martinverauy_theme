@@ -1,0 +1,52 @@
+.list-social {
+  margin: 0;
+
+  li {
+    font-size: 13px;
+    vertical-align: middle;
+  }
+
+  &__link {
+    a {
+      border: solid 1px transparent;
+      border-radius: 50%;
+      display: block;
+      font-size: 18px;
+      height: 32px;
+      line-height: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      width: 32px;
+
+      &:hover {
+        border-color: $gray-200;
+      }
+    }
+  }
+
+  .fa {
+    &-behance {
+      color: #0057ff;
+    }
+
+    &-facebook-f {
+      color: #3b5998;
+    }
+
+    &-twitter {
+      color: #1da1f2;
+    }
+
+    &-instagram {
+      color: #5851db;
+    }
+
+    &-pinterest-p {
+      color: #ea4c89;
+    }
+
+    &-linkedin-in {
+      color: #1769ff;
+    }
+  }
+}

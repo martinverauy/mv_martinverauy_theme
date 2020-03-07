@@ -16,6 +16,7 @@ function mv_martinverauy_theme_customize_register( $wp_customize ) {
 
 	// Adding Setting.
 	$wp_customize->add_setting( 'mv_martinverauy_theme_logo' );
+	$wp_customize->add_setting( 'mv_martinverauy_theme_logo_width' );
 
 	// Adding Control.
 	$wp_customize->add_control(
@@ -26,6 +27,19 @@ function mv_martinverauy_theme_customize_register( $wp_customize ) {
 				'label'    => __( 'Upload Logo', 'mv_martinverauy_theme_logo' ),
 				'section'  => 'mv_martinverauy_theme_customizer_section',
 				'settings' => 'mv_martinverauy_theme_logo',
+			)
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'mv_martinverauy_theme_logo_width',
+			array(
+				'label'    => __( 'Logo Width (px)', 'mv_martinverauy_theme_logo_width' ),
+				'section'  => 'mv_martinverauy_theme_customizer_section',
+				'settings' => 'mv_martinverauy_theme_logo_width',
+				'type'     => 'number',
 			)
 		)
 	);

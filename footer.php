@@ -12,15 +12,9 @@
 ?>
 	<?php get_template_part( 'template-parts/newsletter' ); ?>
 	<footer class="footer-site">
-		<?php
-		$themeOption = get_option('my_theme_option');
-		if($themeOption['Facebook']){
-			echo '<div><a href="'.$themeOption['Facebook'].'" target="_blank">Facebook</a></div>';
-		}
-		?>	
-		<div class="site-footer__copyright text-center">
-			<p><?php echo esc_html( '© ' . get_bloginfo( 'name' ) . ' ' . gmdate( 'Y' ) . '- Todos los derechos reservados.' ); ?></p>
-		</div>
+		<div class="container">
+			<?php get_template_part( 'template-parts/list-social' ); ?>
+		</div>	
 		<?php do_action( 'before_footer_close_tag' ); ?>
 	</footer>
 	<?php wp_footer(); ?>

@@ -11,7 +11,6 @@
   }
 
   &__logo {
-    width: 18rem;
     padding: 1rem 0;
   }
 
@@ -26,6 +25,33 @@
 
         &:hover {
           color: $primary-color !important;
+        }
+
+        &:after {
+          background-color: $primary-color;
+          bottom: 0;
+          content: '';
+          display: block;
+          height: 3px;
+          left: 50%;
+          margin-left: 0;
+          position: absolute;
+          transition: all 0.3s ease;
+          width: 0;
+        }
+
+        &:hover:after {
+          margin-left: -20px;
+          width: 40px;
+        }
+      }
+    }
+
+    .current_page_item {
+      a {
+        &:after {
+          margin-left: -20px;
+          width: 40px;
         }
       }
     }
