@@ -12,7 +12,7 @@
 $themeOption = get_option('my_theme_option');
 if($themeOption['Mailchimp Shortcode']){
 	?>
-	<section class="newsletter">
+	<section class="newsletter text-center">
 		<div class="container">
 			<div class="site__block site__block--red">
 				<?php echo do_shortcode($themeOption['Mailchimp Shortcode']); ?>

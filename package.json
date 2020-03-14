@@ -12,6 +12,7 @@
   "keywords": [
     "prueba"
   ],
+  "author": "Martin Vera",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.4",

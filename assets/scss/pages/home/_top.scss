@@ -1,5 +1,5 @@
 .home-top {
-  background-image: url(../images/top-bg.svg);
+  background-image: url(../images/top-bg-2.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +22,10 @@
     margin: 0;
     margin-bottom: 3rem;
     letter-spacing: -4px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 8rem;
+    }
   }
 
   &__image {
