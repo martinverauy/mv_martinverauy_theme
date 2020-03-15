@@ -9,7 +9,8 @@ html {
 body {
   @include openSansRegular();
 
-  font-size: 1.6rem;
+  color: $text-color;
+  font-size: 1.8rem;
 }
 
 p {

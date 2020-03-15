@@ -17,3 +17,19 @@ $(document).ready(function() {
         $(this).parent().parent().addClass("enfocado")
     })
 })
+
+$( window ).load( function() {
+    setTimeout( function() { 
+        $( '.waitForLoad' ).removeClass( 'waitForLoad' ).addClass( 'animated' )
+    }, 200 )
+}); 
+
+$( window ).scroll( function() {
+    scrollTop = $( this ).scrollTop()
+    $( '.waitForScroll' ).each( function() {
+        elementOffset = $( this ).offset()
+        if( elementOffset.top - scrollTop < 750 ) {
+            $( this ).removeClass( 'waitForScroll' ).addClass( 'animated' )
+        }
+    });
+}); 
