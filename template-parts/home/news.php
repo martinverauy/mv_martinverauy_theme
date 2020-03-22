@@ -46,7 +46,4 @@ if ( $query->have_posts() ) {
 	</section>
 	<?php
 }
-wp_reset_postdata(); ?>
-
-			
-		
+wp_reset_postdata(); ?>	
