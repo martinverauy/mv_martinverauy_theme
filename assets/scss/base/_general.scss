@@ -9,11 +9,12 @@ html {
 body {
   @include openSansRegular();
 
+  color: $text-color;
   font-size: 1.8rem;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 a {

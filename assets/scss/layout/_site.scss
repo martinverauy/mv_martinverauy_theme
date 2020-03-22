@@ -25,7 +25,17 @@
   }
 
   &__title {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 }

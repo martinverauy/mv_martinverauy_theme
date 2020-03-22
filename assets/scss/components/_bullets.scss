@@ -1,0 +1,35 @@
+.bullets {
+  &__content {
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 1px;
+      top: 0;
+      bottom: 1rem;
+      background-color: $gray-400;
+      position: absolute;
+      left: 49%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 5rem;
+    padding-left: 65px;
+    position: relative;
+  }
+
+  &__icon {
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+  }
+
+  p {
+    color: $gray-600;
+    font-size: 1.6rem;
+  }
+}

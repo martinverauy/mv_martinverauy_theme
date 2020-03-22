@@ -36,6 +36,24 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_5e6e2d2b5716d",
+            "label": "Servicios",
+            "name": "servicios",
+            "type": "photo_gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "fields[servicios": {
+                "edit_modal": "Default"
+            },
+            "edit_modal": "Default"
         }
     ],
     "location": [
@@ -55,5 +73,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1583550872
+    "modified": 1584278843
 }

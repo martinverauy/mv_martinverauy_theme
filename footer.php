@@ -10,14 +10,16 @@
  */
 
 ?>
-	<?php get_template_part( 'template-parts/newsletter' ); ?>
-	<footer class="footer-site">
-		<div class="container">
-			<?php get_template_part( 'template-parts/list-social' ); ?>
-		</div>	
-		<?php do_action( 'before_footer_close_tag' ); ?>
-	</footer>
-	<?php wp_footer(); ?>
+	<div class="wrap--footer">
+		<?php get_template_part( 'template-parts/newsletter' ); ?>
+		<footer class="footer-site">
+			<div class="container">
+				<?php get_template_part( 'template-parts/list-social' ); ?>
+			</div>	
+			<?php do_action( 'before_footer_close_tag' ); ?>
+		</footer>
+		<?php wp_footer(); ?>
+	</div>
 	<?php do_action( 'before_body_close_tag' ); ?>
 </body>
 </html>
