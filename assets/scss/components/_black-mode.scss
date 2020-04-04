@@ -1,0 +1,28 @@
+.black-mode {
+  background-color: $black-mode;
+  color: $white;
+
+  .header-site {
+    background-color: $black-mode;
+
+    &__logo {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &__nav {
+      li {
+        a {
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .bullets {
+    p {
+      color: $gray-500;
+    }
+  }
+}

@@ -16,12 +16,14 @@
   }
 
   &__title {
-    font-size: 11rem;
+    @include montserratBlack();
+
+    font-size: 7.5rem;
     font-weight: 700;
     line-height: 1;
     margin: 0;
     margin-bottom: 3rem;
-    letter-spacing: -4px;
+    text-transform: uppercase;
 
     @include media-breakpoint-down(lg) {
       font-size: 8rem;

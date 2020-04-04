@@ -4,12 +4,6 @@
  *
  * @package MV_MartinVeraUy_Theme
  */
-
-/**
- * Assets Enqueue.
- *
- * @return void
- */
 function mv_martinverauy_theme_scripts() {
 	// include the css file.
 	$css_file_path = glob( get_template_directory() . '/dist/css/bundle.*.css' );

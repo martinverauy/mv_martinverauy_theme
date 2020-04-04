@@ -23,6 +23,16 @@ function mv_martinverauy_theme_items() {
       'page'=>'my_theme_option',
       'fields'=> array(
         array(
+        'id'=> 'black-mode',
+        'title'=>'Black Mode',
+        'callback'=> 'checkbox_callback'
+        ),
+        array(
+        'id'=> 'go-mobile',
+        'title'=>'Go Mobile',
+        'callback'=> 'checkbox_callback'
+        ),
+        array(
         'id'=> 'behance',
         'title'=>'Behance',
         'callback'=> 'text_callback'
@@ -115,6 +125,16 @@ function text_callback($args) {
 function shortcode_callback($args) { 
     $options = get_option($args[0]); 
     echo '<input type="text" class="regular-text" id="'  . $args[1] . '" name="'. $args[0] .'['  . $args[1] . ']" value="' . $options[''  . $args[1] . ''] . '"></input><p class="help-block">Shortcode code without the quotes.</p>';
+}
+function checkbox_callback($args) { 
+    $options = get_option($args[0]); 
+    echo '<div class="form-check"><input type="checkbox" class="form-check-input" name="'. $args[0] .'['  . $args[1] . ']"';
+    if ($options[''  . $args[1] . ''] == 'Si') {
+      echo 'value="No" checked="checked"';
+    } else {
+      echo 'value="Si"';
+    }
+    echo '><label class="form-check-label" for="'  . $args[1] . '">Si</label></div>';
 }
 
 /***************************************

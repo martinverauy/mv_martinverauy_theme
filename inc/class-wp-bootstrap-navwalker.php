@@ -2,7 +2,7 @@
 /**
  * WP Bootstrap Navwalker
  *
- * @package WP-Bootstrap-Navwalker
+ * @package MV_MartinVeraUy_Theme
  */
 
 /*

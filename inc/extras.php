@@ -14,9 +14,10 @@
  * @return array
  */
 function mv_martinverauy_theme_body_classes( $classes ) {
-	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_multi_author() ) {
-		$classes[] = 'group-blog';
+	// Add class for black mode.
+	$themeOption = get_option('my_theme_option');
+	if ( $themeOption['Black Mode'] == 'Si' ) {
+		$classes[] = 'black-mode';
 	}
 
 	// Adds a class of hfeed to non-singular pages.

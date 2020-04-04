@@ -1,0 +1,10 @@
+.sidebar {
+  &--opacity {
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    @at-root .sticky & {
+      opacity: 1;
+    }
+  }
+}
