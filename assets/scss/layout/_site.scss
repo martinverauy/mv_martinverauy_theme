@@ -9,11 +9,6 @@
     position: relative;
     z-index: 1;
 
-    &--red {
-      background-color: $third-color;
-      color: $white;
-    }
-
     &--big {
       padding: 4rem 7rem;
     }
@@ -24,12 +19,27 @@
     margin: 0 auto;
   }
 
+  &__pretitle {
+    color: $third-color;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
   &__title {
+    @include montserratBlack();
+
+    font-size: 4rem;
     margin-bottom: 3rem;
-    font-size: 3.2rem;
+    text-transform: uppercase;
 
     @include media-breakpoint-down(md) {
       font-size: 1.8rem;
+    }
+
+    &--small {
+      font-size: 2rem !important;
     }
   }
 
@@ -37,5 +47,9 @@
     font-size: 2.1rem;
     font-weight: 700;
     margin-bottom: 1rem;
+  }
+
+  &__has-nav {
+    padding-top: 74px;
   }
 }

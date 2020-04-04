@@ -1,11 +1,12 @@
 <?php
-
 /**
  * Custom pagination with bootstrap .pagination class
  * source: http://www.ordinarycoder.com/paginate_links-class-ul-li-bootstrap/
  *
  * @param  boolean $echo Echo flag.
  * @return string|void
+ *
+ * @package MV_MartinVeraUy_Theme
  */
 function bootstrap_pagination( $echo = true ) {
 	global $wp_query;

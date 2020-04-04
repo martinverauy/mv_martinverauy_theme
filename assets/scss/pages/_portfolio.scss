@@ -1,0 +1,31 @@
+.portfolio {
+  &__block {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem !important;
+  }
+
+  &__button {
+    background-color: $white;
+    border-radius: 50px;
+    bottom: 20px;
+    box-shadow: -0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 20px;
+
+    span {
+      display: inline-block;
+      line-height: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-indent: -150px;
+    }
+
+    &:hover {
+      span {
+        text-indent: 0;
+      }
+    }
+  }
+}

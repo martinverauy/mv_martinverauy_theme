@@ -1,4 +1,5 @@
 .header-site {
+  background-color: $white;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
   left: 0;
   position: fixed;
@@ -12,6 +13,23 @@
 
   &__logo {
     padding: 1rem 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+
+    @at-root .sticky & {
+      width: 1px !important;
+      opacity: 0;
+    }
+
+    &--small {
+      width: 1px !important;
+      opacity: 0;
+
+      @at-root .sticky & {
+        width: 45px !important;
+        opacity: 1;
+      }
+    }
   }
 
   &__nav {
@@ -22,6 +40,11 @@
         font-weight: 300;
         padding: 2.5rem 1.5rem !important;
         position: relative;
+        transition: all 0.3s ease;
+
+        @at-root .sticky & {
+          padding: 1rem 1.5rem !important;
+        }
 
         &:hover {
           color: $primary-color !important;

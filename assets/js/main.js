@@ -12,24 +12,45 @@ $(document).ready(function() {
         })
     }, 4e3)
 
+    if (typeof(Storage) !== 'undefined') {
+        if ( localStorage.getItem('blackMode') !== 'undefined' ) {
+            if ( localStorage.getItem('blackMode') == 1 ){
+              $('body').addClass('black-mode')
+              $('#blackMode').addClass('btn--active')
+              $('#blackMode').html('<i class="fas fa-toggle-on"></i>')
+            }
+        }
+    }
+
     $(".form-control").on("focus", function() {
         $(".form-control").parent().parent().removeClass("enfocado")
         $(this).parent().parent().addClass("enfocado")
     })
 })
 
-$( window ).load( function() {
-    setTimeout( function() { 
-        $( '.waitForLoad' ).removeClass( 'waitForLoad' ).addClass( 'animated' )
-    }, 200 )
-}); 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 150){  
+        $('body').addClass("sticky");
+    }else{
+        $('body').removeClass("sticky");
+    }
+})
 
-$( window ).scroll( function() {
-    scrollTop = $( this ).scrollTop()
-    $( '.waitForScroll' ).each( function() {
-        elementOffset = $( this ).offset()
-        if( elementOffset.top - scrollTop < 750 ) {
-            $( this ).removeClass( 'waitForScroll' ).addClass( 'animated' )
-        }
-    });
-}); 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+function blackMode(elem) {    
+    if ( $(".black-mode")[0] ){
+      $('#blackMode').removeClass("btn--active")
+      $('#blackMode').html('<i class="fas fa-toggle-off"></i>')
+      $("body").removeClass("black-mode")
+      localStorage.setItem("blackMode", 0)
+    } else {
+      $('#blackMode').addClass("btn--active")
+      $('#blackMode').html('<i class="fas fa-toggle-on"></i>')
+      $("body").addClass("black-mode")
+      localStorage.setItem("blackMode", 1)
+    }
+}
+window.blackMode = blackMode;

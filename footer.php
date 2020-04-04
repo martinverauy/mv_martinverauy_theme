@@ -14,7 +14,10 @@
 		<?php get_template_part( 'template-parts/newsletter' ); ?>
 		<footer class="footer-site">
 			<div class="container">
-				<?php get_template_part( 'template-parts/list-social' ); ?>
+				<div class="clearfix">
+					<?php get_template_part( 'template-parts/list-social' ); ?>
+					<?php get_template_part( 'template-parts/go-mobile' ); ?>
+				</div>
 			</div>	
 			<?php do_action( 'before_footer_close_tag' ); ?>
 		</footer>

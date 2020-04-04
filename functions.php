@@ -93,3 +93,8 @@ require get_template_directory() . '/inc/theme-customizer.php';
  * Add Thumbnail Column in the admin for display thumbnail
  */
 require get_template_directory() . '/inc/thumbnail-column.php';
+
+/**
+ * Adding custom post type Portfolio
+ */
+require get_template_directory() . '/inc/post-portfolio.php';

@@ -3,6 +3,22 @@
     "title": "Home",
     "fields": [
         {
+            "key": "field_5e8665d0aa351",
+            "label": "Top",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5e5bd5d06e6d7",
             "label": "Texto Introductorio",
             "name": "texto_introductorio",
@@ -38,6 +54,22 @@
             "placeholder": ""
         },
         {
+            "key": "field_5e8665e8aa352",
+            "label": "Servicios",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5e6e2d2b5716d",
             "label": "Servicios",
             "name": "servicios",
@@ -54,6 +86,46 @@
                 "edit_modal": "Default"
             },
             "edit_modal": "Default"
+        },
+        {
+            "key": "field_5e8665f3aa353",
+            "label": "Yo",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8665fcaa354",
+            "label": "Mi foto",
+            "name": "mi_foto",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -73,5 +145,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584278843
+    "modified": 1585866255
 }
