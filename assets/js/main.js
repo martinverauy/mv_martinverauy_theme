@@ -54,3 +54,7 @@ function blackMode(elem) {
     }
 }
 window.blackMode = blackMode;
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide')
+})

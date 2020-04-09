@@ -95,6 +95,7 @@ require get_template_directory() . '/inc/theme-customizer.php';
 require get_template_directory() . '/inc/thumbnail-column.php';
 
 /**
- * Adding custom post type Portfolio
+ * Adding custom post types
  */
 require get_template_directory() . '/inc/post-portfolio.php';
+require get_template_directory() . '/inc/post-experiencia.php';

@@ -16,7 +16,7 @@
 					<span class="home-top__pretitle">
 						<?php echo esc_attr(get_bloginfo('description', 'display')); ?>
 					</span>
-					<h2 class="home-top__title fadeInUp waitForLoad">
+					<h2 class="home-top__title">
 						<span id="fraseTop">Sitios Web</span>
 					</h2>
 					<?php

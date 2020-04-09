@@ -13,7 +13,7 @@
 		<div class="row align-items-center">
 			<?php if ( get_field('mi_foto') ) { ?>
 				<div class="col-12 col-md-7">
-					<img class="img--block" src="<?php echo get_field('mi_foto'); ?>" alt="<?php bloginfo( 'name' ); ?>" />
+					<img class="img--block img--border-radius" src="<?php echo get_field('mi_foto'); ?>" alt="<?php bloginfo( 'name' ); ?>" />
 				</div>
 			<?php } ?>
 			<div class="col-12 col-md-5">

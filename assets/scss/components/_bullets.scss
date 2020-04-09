@@ -1,4 +1,9 @@
 .bullets {
+  background-image: url(../images/left-center.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+
   &__content {
     position: relative;
     padding-top: 3rem;

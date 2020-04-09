@@ -32,7 +32,7 @@
 // @import '~bootstrap/scss/tables';
 // @import '~bootstrap/scss/toasts';
 @import '~bootstrap/scss/tooltip';
-// @import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/transitions';
 @import '~bootstrap/scss/type';
 @import '~bootstrap/scss/utilities';
 
@@ -64,6 +64,7 @@
 @import 'pages/home/top';
 @import 'pages/home/news';
 @import 'pages/portfolio';
+@import 'pages/web';
 
 // Components
 @import 'components/black-mode';
@@ -72,3 +73,4 @@
 @import 'components/list-social';
 @import 'components/modal';
 @import 'components/newsletter';
+@import 'components/timeline';

@@ -1,8 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * Template part for displaying the newsletter from Mailchimp plugin
  *
  * @package MV_MartinVeraUy_Theme
  */
