@@ -1,0 +1,74 @@
+.timeline {
+  position: relative;
+
+  &:before {
+    background-color: $gray-400;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    z-index: -1;
+  }
+
+  &__date {
+    @include montserratBlack();
+
+    background-color: $primary-color;
+    border-radius: 1rem;
+    color: $white;
+    margin: 0 auto 1rem;
+    max-width: 160px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    padding: 20px;
+    position: relative;
+
+    @at-root .justify-content-start & {
+      text-align: right;
+      margin-top: -150px;
+    }
+
+    &:before {
+      background-color: $white;
+      border: solid 3px $primary-color;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 10px;
+      left: -20px;
+      position: absolute;
+      top: 30px;
+      width: 10px;
+
+      @at-root .justify-content-start & {
+        left: inherit;
+        right: -20px;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__image {
+    max-height: 70px;
+    width: auto;
+  }
+
+  &__inline {
+    margin-bottom: 0;
+
+    li {
+      border: solid 3px $gray-400;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 50px;
+    }
+  }
+}

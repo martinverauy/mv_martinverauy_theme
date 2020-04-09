@@ -50,7 +50,7 @@
           color: $primary-color !important;
         }
 
-        &:after {
+        &:before {
           background-color: $primary-color;
           bottom: 0;
           content: '';
@@ -63,7 +63,7 @@
           width: 0;
         }
 
-        &:hover:after {
+        &:hover:before {
           margin-left: -20px;
           width: 40px;
         }

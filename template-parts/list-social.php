@@ -2,8 +2,6 @@
 /**
  * Template part for displaying social links
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
  * @package MV_MartinVeraUy_Theme
  */
 

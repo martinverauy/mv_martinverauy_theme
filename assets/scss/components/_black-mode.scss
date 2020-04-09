@@ -25,4 +25,20 @@
       color: $gray-500;
     }
   }
+
+  .site {
+    &__pretitle {
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  .timeline {
+    &__company {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
 }

@@ -30,7 +30,7 @@ if ( $query->have_posts() ) {
 						</div>
 					<?php } ?>
 					<div class="site__block site__block--big news__text-block">
-						<h4 class="site__title">
+						<h4 class="site__title site__title--small">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title() ?>
 							</a>

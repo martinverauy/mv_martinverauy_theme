@@ -11,8 +11,9 @@
 <section class="bullets site py-5">
 	<div class="container">
 		<div class="text-center">
-			<h2 class="site__pretitle">Hazte conocido en el mundo</h2>
-			<h3 class="site__title">Buscas un sitio web? <br /> #HelloWorld</h3>
+			<h2 class="site__pretitle">Hola mundo</h2>
+			<h3 class="site__title">Sueña en grande &<br /> haz que suceda</h3>
+			<h3 class="site__title">estar donde está<br /> la gente</h3>
 		</div>
 		<div class="site__small bullets__content">
 			<?php

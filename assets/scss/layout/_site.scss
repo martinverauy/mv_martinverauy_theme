@@ -1,7 +1,7 @@
 .site {
   &__block {
     background-color: $white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     box-shadow: 0 1.5rem 5rem 0 rgba(26, 32, 40, 0.4);
     color: $black;
     margin-bottom: 3rem;
@@ -25,6 +25,11 @@
     letter-spacing: 1px;
     margin-bottom: 2rem;
     text-transform: uppercase;
+
+    span {
+      color: $black;
+      display: block;
+    }
   }
 
   &__title {
@@ -36,6 +41,10 @@
 
     @include media-breakpoint-down(md) {
       font-size: 1.8rem;
+    }
+
+    &--big {
+      font-size: 7rem !important;
     }
 
     &--small {

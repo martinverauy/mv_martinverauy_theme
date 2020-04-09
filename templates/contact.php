@@ -10,15 +10,19 @@
 get_header(); ?>
 
 	<section>
-		<div class="container">
-			<?php
-			$themeOption = get_option('my_theme_option');
-			if($themeOption['Contact Form 7 Shortcode']){
-			?>
-				<div id="formulario">
-					<?php echo do_shortcode($themeOption['Contact Form 7 Shortcode']); ?>
+		<div class="site__has-nav">
+			<div class="py-5">
+				<div class="container">
+					<?php
+					$themeOption = get_option('my_theme_option');
+					if($themeOption['Contact Form 7 Shortcode']){
+					?>
+						<div id="formulario">
+							<?php echo do_shortcode($themeOption['Contact Form 7 Shortcode']); ?>
+						</div>
+					 <?php } ?>
 				</div>
-			 <?php } ?>
+			</div>
 		</div>
 	</section>
 
