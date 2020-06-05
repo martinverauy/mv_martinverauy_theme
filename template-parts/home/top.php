@@ -21,10 +21,13 @@
 					</h2>
 					<?php
 					if(get_field('texto_introductorio')){
-						echo '<p>'.get_field('texto_introductorio').'</p>';
+						echo '<p class="mb-5">'.get_field('texto_introductorio').'</p>';
 					}
 					if(get_field('link_portfolio')){
-						echo '<a href="'.get_field('link_portfolio').'" class="btn btn--degradado">portfolio</a>';
+						echo '<a href="'.get_field('link_portfolio').'" class="btn btn--red">Portfolio</a>';
+					}
+					if(get_field('link_mi')){
+						echo '<a href="'.get_field('link_mi').'" class="btn btn--border">Sobre Mi</a>';
 					}
 					?>
 				</div>
