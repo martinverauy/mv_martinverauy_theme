@@ -22,8 +22,7 @@
 				</div>
 				<p>Martín «Tincho» Vera, o sea yo, me desempeño hace años como diseñador web y maquetador freelance, con conocimientos en programación PHP, MySQL, Javascript y Jquery y mi especialidad es WordPress.</p>
 				<p>Pasen y vean, no molesta que pregunten.</p>
-				<hr />
-				<a href="" class="btn">Mas de mi</a>
+				<a href="" class="btn btn--red">Mas de mi</a>
 			</div>
 		</div>
 		

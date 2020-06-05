@@ -5,7 +5,7 @@
     color: $white;
     font-size: 2.2rem;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: right;
 
     @include media-breakpoint-down(md) {
@@ -19,7 +19,7 @@
   &__form-control {
     border: none;
     font-size: 1.6rem;
-    height: 46px;
+    height: 42px;
     padding: 1rem 2rem;
   }
 }

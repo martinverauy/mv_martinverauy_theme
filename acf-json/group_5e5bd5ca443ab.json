@@ -54,6 +54,22 @@
             "placeholder": ""
         },
         {
+            "key": "field_5ec90f92651f9",
+            "label": "Link Sobre Mi",
+            "name": "link_mi",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_5e8665e8aa352",
             "label": "Servicios",
             "name": "",
@@ -145,5 +161,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585866255
+    "modified": 1590235038
 }
