@@ -1,0 +1,23 @@
+//
+// Mixins
+// ------------------------------------
+
+@mixin openSansLight() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+@mixin openSansRegular() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin openSansBold() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin montserratBlack() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}

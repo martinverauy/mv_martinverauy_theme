@@ -44,7 +44,10 @@
 @import '~animate.css/source/fading_entrances/fadeIn.css';
 
 // Base
+@import 'base/align';
 @import 'base/fonts';
+@import 'base/mixins';
+@import 'base/typography';
 @import 'base/variables';
 @import 'base/general';
 

@@ -23,6 +23,8 @@
   }
 
   &__pretitle {
+    @include openSansLight();
+
     color: $third-color;
     font-size: 1.3rem;
     letter-spacing: 1px;

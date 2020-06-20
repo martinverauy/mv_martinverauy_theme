@@ -13,19 +13,10 @@ body {
   font-size: 1.8rem;
 }
 
-p {
-  line-height: 1.4;
-}
-
 a {
   color: $primary-color;
 
   &:hover {
     color: $secondary-color;
   }
-}
-
-b,
-strong {
-  font-weight: 700;
 }

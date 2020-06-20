@@ -13,13 +13,14 @@
  */
 
 get_header(); ?>
-
-<section class="site text-center py-5">
-	<div class="container">
-		<h4 class="site__title">Perdido?</h4>
-		<p>porque no jugas un poco...</p>
-		<?php echo do_shortcode('[dinosaur-game]'); ?>
-		<p><a href="<?php echo home_url('/'); ?>" class="btn btn-primary">Volver</a></p>
+<section class="site">
+	<div class="site__has-nav">
+		<div class="p-5 text-center">
+			<h3 class="site__title">Perdido?</h3>
+			<h2 class="site__pretitle">porque no jugas un poco...</h2>
+			<?php echo do_shortcode('[dinosaur-game]'); ?>
+			<p><a class="btn btn--red" href="<?php echo home_url('/'); ?>" class="btn btn-primary">Inicio</a></p>
+		</div>
 	</div>
 </section>
 <?php get_footer();
