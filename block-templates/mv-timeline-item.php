@@ -14,7 +14,7 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'mv-timeline-item' . $block['id'];
+$id = 'mv-timeline-item-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
@@ -29,10 +29,10 @@ if( !empty($block['className']) ) {
 $year = get_field('year') ?: 'Año...';
 $subtitulo = get_field('subtitulo') ?: 'Subtitulo...';
 $puesto = get_field('puesto') ?: 'Puesto...';
-$logo = get_field('logo') ?: 295;
-$texto = get_field('year') ?: 'Texto...';
-$destacado = get_field('destacado') ?: 'Destacado...';
-$destacado_subtitulo = get_field('destacado_subtitulo') ?: 'Destacado Subtitulo...';
+$logo = get_field('logo');
+$texto = get_field('texto') ?: 'Texto...';
+$destacado = get_field('destacado');
+$destacado_subtitulo = get_field('destacado_subtitulo');
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <h2 class="site__pretitle">
@@ -43,18 +43,34 @@ $destacado_subtitulo = get_field('destacado_subtitulo') ?: 'Destacado Subtitulo.
 		<?php echo $puesto; ?>
 	</h3>
 
-	<div class="timeline__company">
-		<?php echo wp_get_attachment_image( $logo, 'full' ); ?>
-	</div>
+	<?php if( !empty( $logo ) ) { ?>
+		<div class="timeline__company">
+			<img class="timeline__image" src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+		</div>
+	<?php } ?>
 
-	<?php echo $texto; ?>
+	<p><?php echo $texto; ?></p>
 
-	<div class="site__block text-center">
-		<h5 class="site__title mb-1">
-			<?php echo $destacado; ?>
-		</h5>
-		<h6 class="site__pretitle mb-0">
-			<?php echo $destacado_subtitulo; ?>
-		</h6>
-	</div>
+	<?php if ( $destacado ) { ?>
+		<div class="site__block site__shadow text-center">
+			<h5 class="site__title mb-1">
+				<?php echo $destacado; ?>
+			</h5>
+			<h6 class="site__pretitle mb-0">
+				<?php echo $destacado_subtitulo; ?>
+			</h6>
+		</div>
+	<?php } ?>
+
+	<?php if( have_rows('aptitudes') ): ?>
+		<ul class="list-inline timeline__inline">
+		<?php while( have_rows('aptitudes') ): the_row(); 
+			$aptitud = get_sub_field('aptitud');
+			?>
+			<li class="list-inline-item">
+				<img class="img--block" src="<?php echo $aptitud['url']; ?>" alt="<?php echo $aptitud['alt'] ?>" />
+			</li>
+		<?php endwhile; ?>
+		</ul>
+	<?php endif; ?>
 </div>

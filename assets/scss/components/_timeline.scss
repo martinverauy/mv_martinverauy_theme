@@ -25,13 +25,11 @@
   }
 
   &__block {
+    left: 15px;
+    margin-left: 50%;
     padding: 20px;
     position: relative;
-
-    @at-root .justify-content-start & {
-      text-align: right;
-      margin-top: -150px;
-    }
+    width: 50%;
 
     &:before {
       background-color: $white;
@@ -44,10 +42,14 @@
       position: absolute;
       top: 30px;
       width: 10px;
+    }
 
-      @at-root .justify-content-start & {
-        left: inherit;
-        right: -20px;
+    &:nth-child(even) {
+      left: -5px;
+      margin-left: 0;
+
+      &:before {
+        left: 100%;
       }
     }
 

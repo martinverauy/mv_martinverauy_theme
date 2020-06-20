@@ -20,7 +20,16 @@
 				<div class="me__title">
 					<h3 class="site__title">Bienvenidos <br />a mi web</h3>
 				</div>
-				<?php get_template_part( 'template-parts/content' ); ?>
+				
+
+				<?php
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						get_template_part( 'template-parts/content', get_post_type() );
+					}
+				}
+				?>
 
 				<?php 
 				$firma = get_field('firma');

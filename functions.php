@@ -98,7 +98,6 @@ require get_template_directory() . '/inc/thumbnail-column.php';
  * Adding custom post types
  */
 require get_template_directory() . '/inc/post-portfolio.php';
-require get_template_directory() . '/inc/post-experiencia.php';
 
 /**
  * Adding custom block category

@@ -70,6 +70,65 @@
             "endpoint": 0
         },
         {
+            "key": "field_5eee70e1e443a",
+            "label": "Servicios",
+            "name": "servicios",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5eee70ede443b",
+                    "label": "Nombre",
+                    "name": "nombre",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5eee70f4e443c",
+                    "label": "Texto",
+                    "name": "texto",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_5e8665f3aa353",
             "label": "Yo",
             "name": "",
@@ -151,5 +210,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1592658945
+    "modified": 1592684800
 }
