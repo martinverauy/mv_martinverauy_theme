@@ -5,19 +5,19 @@ var window = require('window')
 window.$ = window.jQuery = window.jquery = $
 
 $(document).ready(function() {
-    var o = ["Sitios Web", "WordPress"], t = 0;
+    var o = ['Sitios Web', 'WordPress', 'Social Media'], t = 0;
     setInterval(function() {
-        $("#fraseTop").fadeOut(function() {
+        $( '#fraseTop' ).fadeOut(function() {
             $(this).html(o[t = (t + 1) % o.length]).fadeIn()
         })
     }, 4e3)
 
-    if (typeof(Storage) !== 'undefined') {
-        if ( localStorage.getItem('blackMode') !== 'undefined' ) {
-            if ( localStorage.getItem('blackMode') == 1 ){
-              $('body').addClass('black-mode')
-              $('#blackMode').addClass('btn--active')
-              $('#blackMode').html('<i class="fas fa-toggle-on"></i>')
+    if ( typeof(Storage) !== 'undefined' ) {
+        if ( localStorage.getItem( 'blackMode' ) !== 'undefined' ) {
+            if ( localStorage.getItem( 'blackMode' ) == 1 ){
+              $( 'body' ).addClass( 'black-mode' )
+              $( '#blackMode' ).addClass( 'btn--active' )
+              $( '#blackMode' ).html( '<i class="fas fa-toggle-on"></i>' )
             }
         }
     }

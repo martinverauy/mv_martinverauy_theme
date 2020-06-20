@@ -13,15 +13,19 @@
  */
 
 get_header(); ?>
+<section class="site">
+	<div class="site__has-nav">
+		<?php
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+				the_post();
 
-<?php if ( have_posts() ) : ?>
-	<div class="container">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID() ?>" class="<?php post_class() ?>">
-				<?php the_content() ?>
-			</article>
-		<?php endwhile; ?>
+				get_template_part( 'template-parts/content', get_post_type() );
+
+			}
+		}
+		?>
 	</div>
-<?php endif;
-
+</section>
+<?php
 get_footer();

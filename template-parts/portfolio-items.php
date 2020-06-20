@@ -22,27 +22,34 @@ if (is_front_page()){
 			)
 		)
 	);
-	$columns = 'col-md-3';
 } else {
 	$args = array (
 		'post_type'              => 'portfolio',
 		'order'                  => 'DESC',
 		'posts_per_page'         => 999999,
 	);
-	$columns = 'col-md-4';
 }
 
+$count = 0;
 $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
+		$count++;
 		?>
-		<div class="col-12 <?php echo $columns; ?> d-flex flex-column">
-			<div class="site__block portfolio__block flex-grow-1" style="background-image: url(<?php the_post_thumbnail_url( );?>);">
-				<h5 class="site__pretitle"><?php the_category(', ') ?></h5>
-				<h4 class="site__title site__title--small"><?php the_title() ?></h4>
-				<a href="<?php the_permalink(); ?>" class="btn portfolio__button"><span>Ver</span> <i class="fas fa-chevron-right"></i></a>
-			</div>
+		<div class="col-12 <?php echo ($count === 1) ? 'col-md-6' : 'col-md-3'; ?> d-flex flex-column">
+			<a href="<?php the_permalink(); ?>">
+				<div class="site__block portfolio__block flex-grow-1" style="background-image: url(<?php the_post_thumbnail_url( );?>);">
+					<h5 class="site__pretitle">
+						<?php 
+						foreach((get_the_category()) as $category) { 
+						    echo '<span>'.$category->cat_name .'</span>';
+						} 
+						?>
+					</h5>
+					<h4 class="site__title site__title--small"><?php the_title() ?></h4>
+				</div>
+			</a>
 		</div>
 		<?php
 	}

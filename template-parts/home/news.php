@@ -29,7 +29,7 @@ if ( $query->have_posts() ) {
 							<?php the_post_thumbnail('', array('class' => 'img--block')); ?>
 						</div>
 					<?php } ?>
-					<div class="site__block site__block--big news__text-block">
+					<div class="site__block site__block--big site__shadow news__text-block">
 						<h4 class="site__title site__title--small">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title() ?>

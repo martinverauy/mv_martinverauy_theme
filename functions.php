@@ -99,3 +99,13 @@ require get_template_directory() . '/inc/thumbnail-column.php';
  */
 require get_template_directory() . '/inc/post-portfolio.php';
 require get_template_directory() . '/inc/post-experiencia.php';
+
+/**
+ * Adding custom block category
+ */
+require get_template_directory() . '/inc/blocks-category.php';
+
+/**
+ * Adding custom blocks
+ */
+require get_template_directory() . '/inc/blocks.php';

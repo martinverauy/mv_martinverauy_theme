@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wp_exodus
+ * @package MV_MartinVeraUy_Theme
  */
 
 /**

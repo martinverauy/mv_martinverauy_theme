@@ -2,7 +2,6 @@
   &__block {
     background-color: $white;
     border-radius: 1rem;
-    box-shadow: 0 1.5rem 5rem 0 rgba(26, 32, 40, 0.4);
     color: $black;
     margin-bottom: 3rem;
     padding: 3rem 2rem;
@@ -12,6 +11,10 @@
     &--big {
       padding: 4rem 7rem;
     }
+  }
+
+  &__shadow {
+    box-shadow: 11px 10px 38px 0 rgba(0, 0, 0, 0.1);
   }
 
   &__small {
@@ -60,5 +63,23 @@
 
   &__has-nav {
     padding-top: 74px;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 100px;
+
+    i {
+      font-size: 22px;
+      left: 0;
+      position: absolute;
+      top: 17px;
+      width: 100%;
+    }
+  }
+
+  &__firma {
+    width: 180px;
   }
 }

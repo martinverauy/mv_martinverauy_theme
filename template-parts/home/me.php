@@ -8,7 +8,7 @@
  */
 
 ?>
-<section class="me site py-5">
+<section class="me site p-5">
 	<div class="container">
 		<div class="row align-items-center">
 			<?php if ( get_field('mi_foto') ) { ?>
@@ -20,8 +20,14 @@
 				<div class="me__title">
 					<h3 class="site__title">Bienvenidos <br />a mi web</h3>
 				</div>
-				<p>Martín «Tincho» Vera, o sea yo, me desempeño hace años como diseñador web y maquetador freelance, con conocimientos en programación PHP, MySQL, Javascript y Jquery y mi especialidad es WordPress.</p>
-				<p>Pasen y vean, no molesta que pregunten.</p>
+				<?php get_template_part( 'template-parts/content' ); ?>
+
+				<?php 
+				$firma = get_field('firma');
+				if( !empty( $firma ) ): ?>
+				    <p class="site__firma"><img src="<?php echo esc_url($firma['url']); ?>" alt="<?php echo esc_attr($firma['alt']); ?>" /></p>
+				<?php endif; ?>
+				
 				<a href="" class="btn btn--red">Mas de mi</a>
 			</div>
 		</div>

@@ -27,11 +27,12 @@
 
   &--red {
     background-color: $primary-color;
+    border: solid 1px $primary-color;
     color: $white;
 
     &:hover {
-      background-color: $secondary-color;
-      color: $white;
+      background-color: $white;
+      color: $primary-color;
     }
   }
 

@@ -22,7 +22,7 @@
 
   .bullets {
     p {
-      color: $gray-500;
+      color: $gray-600;
     }
   }
 
@@ -30,6 +30,12 @@
     &__pretitle {
       span {
         color: $white;
+      }
+    }
+
+    &__firma {
+      img {
+        filter: brightness(0) invert(1);
       }
     }
   }
