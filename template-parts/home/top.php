@@ -8,7 +8,7 @@
  */
 
 ?>
-<section class="home-top">
+<section class="home-top pb-5">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-12 col-md-6">
@@ -23,11 +23,8 @@
 					if(get_field('texto_introductorio')){
 						echo '<p class="mb-5">'.get_field('texto_introductorio').'</p>';
 					}
-					if(get_field('link_portfolio')){
-						echo '<a href="'.get_field('link_portfolio').'" class="btn btn--red">Portfolio</a>';
-					}
-					if(get_field('link_mi')){
-						echo '<a href="'.get_field('link_mi').'" class="btn btn--border">Sobre Mi</a>';
+					if(get_field('link_sobremi')){
+						echo '<a href="'.get_field('link_sobremi').'" class="btn btn--red">Sobre Mi</a>';
 					}
 					?>
 				</div>

@@ -38,25 +38,9 @@
             "new_lines": ""
         },
         {
-            "key": "field_5e63106a5a36a",
-            "label": "Link portfolio",
-            "name": "link_portfolio",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
             "key": "field_5ec90f92651f9",
             "label": "Link Sobre Mi",
-            "name": "link_mi",
+            "name": "link_sobremi",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -84,24 +68,6 @@
             },
             "placement": "top",
             "endpoint": 0
-        },
-        {
-            "key": "field_5e6e2d2b5716d",
-            "label": "Servicios",
-            "name": "servicios",
-            "type": "photo_gallery",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "fields[servicios": {
-                "edit_modal": "Default"
-            },
-            "edit_modal": "Default"
         },
         {
             "key": "field_5e8665f3aa353",
@@ -142,6 +108,30 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5edad5fe029fa",
+            "label": "Firma",
+            "name": "firma",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -161,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1590235038
+    "modified": 1592658945
 }

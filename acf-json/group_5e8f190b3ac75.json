@@ -3,10 +3,10 @@
     "title": "Expriencia",
     "fields": [
         {
-            "key": "field_5e8f1910bb78a",
-            "label": "Puesto",
-            "name": "puesto",
-            "type": "text",
+            "key": "field_5eee20be371ed",
+            "label": "Año",
+            "name": "year",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -19,7 +19,9 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "min": "",
+            "max": "",
+            "step": ""
         },
         {
             "key": "field_5e8f1917bb78b",
@@ -41,9 +43,71 @@
             "maxlength": ""
         },
         {
+            "key": "field_5e8f1910bb78a",
+            "label": "Puesto",
+            "name": "puesto",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5eee20ed371ee",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5eee20ff371ef",
+            "label": "Texto",
+            "name": "texto",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_5e8f1f1027d4c",
-            "label": "Block titulo",
-            "name": "block_titulo",
+            "label": "Destacado",
+            "name": "destacado",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -61,8 +125,8 @@
         },
         {
             "key": "field_5e8f1f58b8612",
-            "label": "Block subtitulo",
-            "name": "block_subtitulo",
+            "label": "Destacado Subtitulo",
+            "name": "destacado_subtitulo",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -82,7 +146,7 @@
             "key": "field_5e8f1eac076ed",
             "label": "Aptitudes",
             "name": "aptitudes",
-            "type": "photo_gallery",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -91,18 +155,45 @@
                 "class": "",
                 "id": ""
             },
-            "fields[aptitudes": {
-                "edit_modal": "Default"
-            },
-            "edit_modal": "Default"
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5eee2144371f0",
+                    "label": "Aptitud",
+                    "name": "aptitud",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "expriencia"
+                "value": "acf\/mv-timeline-item"
             }
         ]
     ],
@@ -114,5 +205,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1586437987
+    "modified": 1592664429
 }
