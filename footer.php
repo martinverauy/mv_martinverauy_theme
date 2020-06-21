@@ -15,7 +15,7 @@
 		<footer class="footer-site">
 			<div class="container">
 				<div class="clearfix">
-					<?php get_template_part( 'template-parts/list-social' ); ?>
+					<?php echo do_shortcode( '[mv_redes_sociales footer="footer"]' ); ?>
 					<?php get_template_part( 'template-parts/go-mobile' ); ?>
 				</div>
 			</div>	
