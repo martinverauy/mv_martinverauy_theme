@@ -26,6 +26,7 @@ function portfolio_post_type() {
 		'description'         => __( 'Post Type Description', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'thumbnail', ),
+		'show_in_rest' => true,
         'taxonomies'          => array( 'category' ),
 		'hierarchical'        => false,
 		'public'              => true,

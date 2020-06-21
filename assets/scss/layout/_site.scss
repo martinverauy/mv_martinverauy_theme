@@ -84,4 +84,14 @@
   &__firma {
     width: 180px;
   }
+
+  &__date {
+    @include montserratBlack();
+
+    border-radius: 1rem;
+    margin: 0 auto 1rem;
+    max-width: 160px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
 }

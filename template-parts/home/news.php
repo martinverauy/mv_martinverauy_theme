@@ -36,7 +36,7 @@ if ( $query->have_posts() ) {
 							</a>
 						</h4>
 						<?php the_excerpt(); ?>
-						<a href="<?php the_permalink(); ?>" class="btn">Ver más</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn--red">Ver más</a>
 					</div>
 					<?php  	
 				}
