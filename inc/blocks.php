@@ -52,5 +52,19 @@ function mv_martinverauy_theme_blocks_types() {
 				'keywords'        => array( 'timeline', 'info', 'mvera' ),
 			)
 		);
+
+		// Block: Data Repeater Item.
+		acf_register_block_type(
+			array(
+				'name'            => 'mv-data-repeater',
+				'title'           => __( 'MV Data Repeater Item' ),
+				'description'     => __( 'A MV block for data Repeater items.' ),
+				'render_template' => 'block-templates/mv-data-repeater-item.php',
+				'category'        => 'mvera',
+				'icon'            => 'warning',
+				'align'           => 'full',
+				'keywords'        => array( 'data', 'repeater', 'mvera' ),
+			)
+		);
 	}
 }

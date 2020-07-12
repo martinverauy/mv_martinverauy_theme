@@ -6,13 +6,15 @@
 }
 
 .img {
-  &--block {
+  &--block,
+  &--block img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  &--border-radius {
+  &--border-radius,
+  &--border-radius img {
     border-radius: 1rem;
   }
 

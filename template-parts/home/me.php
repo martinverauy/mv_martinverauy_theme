@@ -20,7 +20,6 @@
 				<div class="me__title">
 					<h3 class="site__title">Bienvenidos <br />a mi web</h3>
 				</div>
-				
 
 				<?php
 				if ( have_posts() ) {
@@ -36,8 +35,6 @@
 				if( !empty( $firma ) ): ?>
 				    <p class="site__firma"><img src="<?php echo esc_url($firma['url']); ?>" alt="<?php echo esc_attr($firma['alt']); ?>" /></p>
 				<?php endif; ?>
-				
-				<a href="" class="btn btn--red">Mas de mi</a>
 			</div>
 		</div>
 		

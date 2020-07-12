@@ -6,7 +6,7 @@
  *
  * @package MV_MartinVeraUy_Theme
  */
-if( have_rows('servicios') ): ?>
+if( have_rows('servicios') ) : ?>
 	<section class="bullets site p-5">
 		<div class="container">
 			<div class="text-center pb-5">
@@ -20,11 +20,11 @@ if( have_rows('servicios') ): ?>
 					?>
 					<div class="col-12 col-md-4 d-flex flex-column">
 						<div class="site__block site__shadow flex-grow-1">
-							<div class="row">	
-								<div class="col-12 col-md-3">
+							<div class="row align-items-center">	
+								<div class="col-12 col-md-2">
 									<div class="site__icon bg--red text-center square"><i class="fas fa-check"></i></div>
 								</div>
-								<div class="col-12 col-md-9">
+								<div class="col-12 col-md-10">
 									<h4 class="site__subtitle"><?php echo $nombre; ?></h4>
 									<p class="mb-0"><?php echo $texto; ?></p>
 								</div>

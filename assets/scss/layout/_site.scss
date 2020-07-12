@@ -70,13 +70,14 @@
   &__icon {
     border-radius: 50%;
     margin: 0 auto;
-    max-width: 100px;
+    width: 4rem;
 
     i {
-      font-size: 22px;
-      left: 0;
+      font-size: 20px;
+      left: calc(100% - 50px);
+      overflow: hidden;
       position: absolute;
-      top: 17px;
+      top: calc(100% - 29px);
       width: 100%;
     }
   }
