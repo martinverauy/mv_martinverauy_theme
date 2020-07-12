@@ -1,4 +1,4 @@
-.wp {
+.wordpress {
   &-block {
     // Quote
     &-quote {
@@ -12,6 +12,13 @@
 
       cite {
         font-size: 1rem;
+      }
+    }
+
+    // images
+    &-image {
+      img {
+        max-width: 100%;
       }
     }
   }

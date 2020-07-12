@@ -15,12 +15,16 @@ h5,
   @include montserratBlack();
 }
 
+.font {
+  &--big {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+}
+
 p {
   line-height: 1.4;
-
-  & + & {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
 }
 
 b,
